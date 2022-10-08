@@ -1,10 +1,11 @@
 import { NavigationContainer } from "@react-navigation/native";
+// import {MaterialCommunityIcons} from 'expo-icons'
 
 import AppNavigation from "./AppNavigation";
 import AuthNavigation from "./AuthNavigation";
 
 export default function MainNavigation() {
-  const isLoggedIn = true;
+  const isLoggedIn = false;
 
   return (
     <NavigationContainer>
