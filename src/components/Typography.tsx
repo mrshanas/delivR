@@ -11,5 +11,7 @@ const AppText = ({ children, ...otherProps }: any) => {
 export default AppText;
 
 const styles = StyleSheet.create({
-  typography: {},
+  typography: {
+    fontFamily: "Poppins",
+  },
 });
