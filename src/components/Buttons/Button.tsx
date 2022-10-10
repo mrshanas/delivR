@@ -1,7 +1,7 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { FC, ReactNode } from "react";
 
-import { COLORS } from "../utils";
+import { COLORS } from "../../utils";
 
 interface Props {
   children: ReactNode;

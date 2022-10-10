@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View } from "react-native";
 
-import { AppButton, SafeAreaScreen } from "../components";
+import { SafeAreaScreen } from "../components";
+import { AppButton } from "../components/Buttons";
 import { COLORS, routes } from "../utils";
 
 export default function Welcome({ navigation }: any) {

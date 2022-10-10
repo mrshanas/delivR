@@ -1,11 +1,12 @@
 import { StyleSheet, Text, View } from "react-native";
-import React from "react";
+
+import { SafeAreaScreen } from "../components";
 
 export default function Offers() {
   return (
-    <View>
+    <SafeAreaScreen>
       <Text>Offers</Text>
-    </View>
+    </SafeAreaScreen>
   );
 }
 

@@ -6,7 +6,8 @@ import {
   View,
 } from "react-native";
 
-import { AppButton, AppTextInput, SafeAreaScreen } from "../components";
+import { AppTextInput, SafeAreaScreen } from "../components";
+import { AppButton } from "../components/Buttons";
 import { COLORS, routes } from "../utils";
 
 export default function SignUp({ navigation }: any) {

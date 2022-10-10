@@ -1,11 +1,12 @@
 import { StyleSheet, Text, View } from "react-native";
-import React from "react";
+
+import { SafeAreaScreen } from "../components";
 
 export default function Profile() {
   return (
-    <View>
+    <SafeAreaScreen>
       <Text>Profile</Text>
-    </View>
+    </SafeAreaScreen>
   );
 }
 

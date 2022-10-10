@@ -1,11 +1,12 @@
-import { StyleSheet, Text, View } from "react-native";
-import React from "react";
+import { Text, StyleSheet } from "react-native";
+
+import { SafeAreaScreen } from "../components";
 
 export default function Settings() {
   return (
-    <View>
+    <SafeAreaScreen>
       <Text>Settings</Text>
-    </View>
+    </SafeAreaScreen>
   );
 }
 
