@@ -1,5 +1,4 @@
 import { NavigationContainer } from "@react-navigation/native";
-// import {MaterialCommunityIcons} from 'expo-icons'
 
 import AppNavigation from "./AppNavigation";
 import AuthNavigation from "./AuthNavigation";
