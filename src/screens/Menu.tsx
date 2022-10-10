@@ -1,11 +1,11 @@
-import { View, Text } from "react-native";
+import { View } from "react-native";
 
-import { SafeAreaScreen } from "../components";
+import { AppText, SafeAreaScreen } from "../components";
 
 export default function Menu() {
   return (
     <SafeAreaScreen>
-      <Text>Menu</Text>
+      <AppText>Menu</AppText>
     </SafeAreaScreen>
   );
 }

@@ -1,12 +1,11 @@
 import {
   ScrollView,
   StyleSheet,
-  Text,
   TouchableWithoutFeedback,
   View,
 } from "react-native";
 
-import { AppTextInput, SafeAreaScreen } from "../components";
+import { AppText, AppTextInput, SafeAreaScreen } from "../components";
 import { AppButton } from "../components/Buttons";
 import { COLORS, routes } from "../utils";
 
@@ -14,8 +13,8 @@ export default function SignUp({ navigation }: any) {
   return (
     <SafeAreaScreen>
       <View style={styles.textContainer}>
-        <Text style={styles.signUpText}>Sign Up</Text>
-        <Text style={styles.detailsText}>Add details to your signup</Text>
+        <AppText style={styles.signUpText}>Sign Up</AppText>
+        <AppText style={styles.detailsText}>Add details to your signup</AppText>
       </View>
       <ScrollView style={styles.inputContainer}>
         <AppTextInput
@@ -62,14 +61,14 @@ export default function SignUp({ navigation }: any) {
           </AppButton>
         </View>
         <View style={styles.already}>
-          <Text style={[{ fontSize: 16 }, styles.grayText]}>
+          <AppText style={[{ fontSize: 16 }, styles.grayText]}>
             Already have an account?{" "}
             <TouchableWithoutFeedback
               onPress={() => navigation.navigate(routes.LOGIN_SCREEN)}
             >
-              <Text style={styles.primaryText}>Login</Text>
+              <AppText style={styles.primaryText}>Login</AppText>
             </TouchableWithoutFeedback>
-          </Text>
+          </AppText>
         </View>
       </ScrollView>
     </SafeAreaScreen>

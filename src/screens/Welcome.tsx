@@ -1,6 +1,6 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 
-import { SafeAreaScreen } from "../components";
+import { AppText, SafeAreaScreen } from "../components";
 import { AppButton } from "../components/Buttons";
 import { COLORS, routes } from "../utils";
 
@@ -8,17 +8,17 @@ export default function Welcome({ navigation }: any) {
   return (
     <SafeAreaScreen styles={styles.container}>
       <View style={styles.textContainer}>
-        <Text style={[styles.text]}>deli</Text>
-        <Text style={[styles.text, styles.btyText]}>VR</Text>
+        <AppText style={[styles.text]}>deli</AppText>
+        <AppText style={[styles.text, styles.btyText]}>VR</AppText>
       </View>
       <View>
-        <Text style={styles.label}>Food Delivery</Text>
+        <AppText style={styles.label}>Food Delivery</AppText>
       </View>
       <View style={styles.introContainer}>
-        <Text style={styles.introText}>
+        <AppText style={styles.introText}>
           Discover the best foods from over 1,000 restaurants and fast delivery
           to your doorstep
-        </Text>
+        </AppText>
       </View>
 
       {/* Auth Buttons  */}

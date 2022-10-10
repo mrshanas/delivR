@@ -1,5 +1,6 @@
-import { Image, ImageBackground, StyleSheet, Text, View } from "react-native";
+import { Image, ImageBackground, StyleSheet } from "react-native";
 
+import { AppText } from "../components";
 import { COLORS } from "../utils";
 
 export default function Splash() {
@@ -12,7 +13,7 @@ export default function Splash() {
         source={require("../assets/images/monkey.svg")}
         style={styles.img}
       />
-      <Text style={styles.text}>Meal Monkey</Text>
+      <AppText style={styles.text}>Meal Monkey</AppText>
     </ImageBackground>
   );
 }

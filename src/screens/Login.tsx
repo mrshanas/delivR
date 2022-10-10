@@ -1,6 +1,6 @@
-import { View, Text, TouchableWithoutFeedback, StyleSheet } from "react-native";
+import { View, TouchableWithoutFeedback, StyleSheet } from "react-native";
 
-import { AppTextInput, SafeAreaScreen } from "../components";
+import { AppText, AppTextInput, SafeAreaScreen } from "../components";
 import { AppButton } from "../components/Buttons";
 import { COLORS, routes } from "../utils";
 
@@ -8,8 +8,8 @@ export default function Login({ navigation }: any) {
   return (
     <SafeAreaScreen>
       <View style={styles.textContainer}>
-        <Text style={styles.loginText}>Login</Text>
-        <Text style={styles.detailsText}>Add details to your login</Text>
+        <AppText style={styles.loginText}>Login</AppText>
+        <AppText style={styles.detailsText}>Add details to your login</AppText>
       </View>
 
       <View style={styles.inputContainer}>
@@ -37,12 +37,12 @@ export default function Login({ navigation }: any) {
         <TouchableWithoutFeedback
           onPress={() => console.log("To reset password")}
         >
-          <Text style={styles.grayText}>Forgot Password?</Text>
+          <AppText style={styles.grayText}>Forgot Password?</AppText>
         </TouchableWithoutFeedback>
       </View>
 
       <View style={{ marginVertical: 15 }}>
-        <Text style={[{ fontSize: 18 }, styles.grayText]}>Or</Text>
+        <AppText style={[{ fontSize: 18 }, styles.grayText]}>Or</AppText>
       </View>
       {/* Social btns  */}
       <View style={styles.socialBtnsContainer}>
@@ -63,14 +63,14 @@ export default function Login({ navigation }: any) {
 
         {/* Link to SignUp Page  */}
         <View style={styles.signUpContainer}>
-          <Text style={[{ fontSize: 16 }, styles.grayText]}>
+          <AppText style={[{ fontSize: 16 }, styles.grayText]}>
             Dont have an account?{" "}
             <TouchableWithoutFeedback
               onPress={() => navigation.navigate(routes.SIGNUP_SCREEN)}
             >
-              <Text style={styles.primaryText}>Sign Up</Text>
+              <AppText style={styles.primaryText}>Sign Up</AppText>
             </TouchableWithoutFeedback>
-          </Text>
+          </AppText>
         </View>
       </View>
     </SafeAreaScreen>
