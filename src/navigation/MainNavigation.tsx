@@ -5,7 +5,7 @@ import AppNavigation from "./AppNavigation";
 import AuthNavigation from "./AuthNavigation";
 
 export default function MainNavigation() {
-  const isLoggedIn = false;
+  const isLoggedIn = true;
   const [fontsLoaded] = useFonts({
     Poppins: require("../assets/fonts/Poppins-Regular.ttf"),
   });

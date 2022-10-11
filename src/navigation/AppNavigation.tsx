@@ -58,6 +58,7 @@ export default function AppNavigation() {
         tabBarInactiveTintColor: COLORS.mediumGray,
 
         tabBarStyle: {
+          fontFamily: "Poppins",
           paddingHorizontal: -30,
         },
       })}
